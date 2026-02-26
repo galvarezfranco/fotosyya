@@ -1,0 +1,35 @@
+body {
+   margin: 0;
+  height: 100vh;
+
+  background-image: url("assets/fondos/fondo2.jpg");
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat; 
+  background-attachment: fixed;  
+}
+.titulo {
+ font-family: "Josefin Sans", sans-serif;
+  font-size: 30px; 
+  font-size:3vw; 
+  letter-spacing: 2.5px;
+  text-align: center;
+  color: rgb(247, 250, 19);
+}
+.titulo {
+  transition: 0.3s;
+}
+
+.titulo:hover {
+  color: rgb(27, 224, 41);
+}
+.titulo {
+  transition: 0.3s;
+}
+
+.titulo:hover {
+  transform: scale(1.2);
+}
+a {
+  text-decoration:none;
+}
