@@ -1,9 +1,22 @@
 const fondos = [
-  "assets/fondos/fondo2.jpg",
-  "assets/fondos/fondo3.jpg"
+  "assets/fondos/septima1.jpg",
+  "assets/fondos/septima2.jpg",
+  "assets/fondos/septima3.jpg",
+  "assets/fondos/septima4.jpg",
+  "assets/fondos/septima5.jpg",
+  "assets/fondos/septima6.jpg",
+  "assets/fondos/plaza1.jpg",
+  "assets/fondos/plaza2.jpg",
+  "assets/fondos/carro1.jpg",
+  "assets/fondos/carro2.jpg",
 ];
 
+
 let indice = 0;
+
+const enlace = document.createElement('a');
+enlace.target = '_blank';
+enlace.classList = 'enlace';
 
 document.addEventListener("click", function() {
   indice++;
@@ -13,4 +26,16 @@ document.addEventListener("click", function() {
   }
 
   document.body.style.backgroundImage = `url(${fondos[indice]})`;
+
+  if (indice === 3) {
+    enlace.href = 'https://www.google.com/maps/place/Los+Tronquitos/@4.6099852,-74.0701113,3a,75y,340.28h,101.4t/data=!3m7!1e1!3m5!1sMAo_e3FJzmb3ISIjraSZTQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-11.401001343541765%26panoid%3DMAo_e3FJzmb3ISIjraSZTQ%26yaw%3D340.2765049384506!7i16384!8i8192!4m6!3m5!1s0x8e3f99a1f7bd8aaf:0x2564da4824fcdbe7!8m2!3d4.6060276!4d-74.0712!16s%2Fg%2F1ptz3sd3m?entry=tts&g_ep=EgoyMDI2MDIyNS4wIPu8ASoASAFQAw%3D%3D&skid=8fedb4bd-dfa0-4fdf-ab98-f99f86948384';
+    enlace.innerText = 'Donde?';
+    this.body.appendChild(enlace);
+  } else if (indice === 4) {
+    this.body.removeChild(enlace);
+  } else if (indice === 5) {
+    enlace.href = 'google.com';
+    enlace.innerText = 'Google';
+     this.body.appendChild(enlace);
+  } 
 });

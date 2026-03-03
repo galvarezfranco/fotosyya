@@ -1,8 +1,9 @@
-body {
+body 
+{
    margin: 0;
   height: 100vh;
 
-  background-image: url("assets/fondos/fondo2.jpg");
+  background-image: url("assets/fondos/septima1.jpg");
   background-size: cover;        
   background-position: center;   
   background-repeat: no-repeat; 
@@ -33,3 +34,17 @@ body {
 a {
   text-decoration:none;
 }
+
+.hero {
+    cursor: pointer; }
+
+    
+.enlace{
+  color:#fbea00;
+  position: fixed;          
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+    }
