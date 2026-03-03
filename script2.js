@@ -27,15 +27,20 @@ document.addEventListener("click", function() {
 
   document.body.style.backgroundImage = `url(${fondos[indice]})`;
 
-  if (indice === 3) {
+  if (indice === 5) {
     enlace.href = 'https://www.google.com/maps/place/Los+Tronquitos/@4.6099852,-74.0701113,3a,75y,340.28h,101.4t/data=!3m7!1e1!3m5!1sMAo_e3FJzmb3ISIjraSZTQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-11.401001343541765%26panoid%3DMAo_e3FJzmb3ISIjraSZTQ%26yaw%3D340.2765049384506!7i16384!8i8192!4m6!3m5!1s0x8e3f99a1f7bd8aaf:0x2564da4824fcdbe7!8m2!3d4.6060276!4d-74.0712!16s%2Fg%2F1ptz3sd3m?entry=tts&g_ep=EgoyMDI2MDIyNS4wIPu8ASoASAFQAw%3D%3D&skid=8fedb4bd-dfa0-4fdf-ab98-f99f86948384';
-    enlace.innerText = 'Donde?';
+    enlace.innerText = 'Donde es?';
     this.body.appendChild(enlace);
-  } else if (indice === 4) {
+  } else if (indice === 6) {
     this.body.removeChild(enlace);
-  } else if (indice === 5) {
-    enlace.href = 'google.com';
-    enlace.innerText = 'Google';
-     this.body.appendChild(enlace);
+
+  } else if (indice === 7) {
+    enlace.href = 'https://www.google.com/maps/place/Plaza+de+Bol%C3%ADvar/@4.5982087,-74.0755214,3a,75y,25.4h,90.2t/data=!3m7!1e1!3m5!1sJCFghCkyZE3RAd57IvXGmQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-0.20404858448732455%26panoid%3DJCFghCkyZE3RAd57IvXGmQ%26yaw%3D25.39528633957977!7i13312!8i6656!4m8!3m7!1s0x8e3f99a7eccfe58f:0x99cb72b35351476!8m2!3d4.5981898!4d-74.076053!10e5!15sChBwbGF6YSBkZSBib2xpdmFyWhIiEHBsYXphIGRlIGJvbGl2YXKSARNoaXN0b3JpY2FsX2xhbmRtYXJrmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDIxb2FscFVSa1JWUkd4cFZqSkdORTVVVmxOYVJGbDNVMWQzTWxKWFl4QULgAQD6AQUI_QQQSQ!16zL20vMGMzcGt2?entry=tts&g_ep=EgoyMDI2MDIyNS4wIPu8ASoASAFQAw%3D%3D&skid=467004ff-b395-434e-b866-4ba5a7c44c5d';
+    enlace.innerText = 'Y esta?';
+     this.body.appendChild(enlace); 
+  } 
+  else if (indice === 8) {
+    this.body.removeChild(enlace);
+
   } 
 });
