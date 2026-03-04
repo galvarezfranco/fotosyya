@@ -47,4 +47,25 @@ a {
   transform: translate(-50%, -50%);  
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
-    }
+  cursor: pointer;
+}
+.enlace {
+  position: relative;
+  display: inline-block;
+}
+
+.enlace::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.enlace:hover::after {
+  width: 100%;
+}

@@ -9,6 +9,10 @@ const fondos = [
   "assets/fondos/plaza2.jpg",
   "assets/fondos/carro1.jpg",
   "assets/fondos/carro2.jpg",
+  "assets/fondos/virrey1.jpg",
+  "assets/fondos/virrey2.jpg",
+  "assets/fondos/virrey3.jpg",
+  "assets/fondos/virrey4.jpg",
 ];
 
 
