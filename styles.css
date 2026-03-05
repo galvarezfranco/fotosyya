@@ -45,3 +45,22 @@ body {
 a {
   text-decoration:none;
 }
+
+.Rollo{
+  position: absolute;
+  width: 14vw;
+  height: auto;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease;
+}
+.Rollo:hover{
+  transform: translateX(-50%) rotate(-6deg) scale(1.1);
+}
+
+.Rollo2{
+  position: sticky;
+ left: 50%;
+  transform: translateX(-50%);
+}
